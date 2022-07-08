@@ -17,10 +17,23 @@
                 <a href="#">Dinner</a>
                 <a href="#">Desert</a>
             </nav>
+            <input type="text" placeholder="Search">
         </div>
     </header>
     <main>
-        
+        <span>Add Recipe</span>
+        <form action="/recipes">
+            <input type="text" placeholder="Recipe Name" name="name">
+            <input type="text" placeholder="Ingredients" name="ingredients">
+            <button>Add Ingredient</button>
+
+            <label for="directions">Directions</label>
+            <textarea id="directions" name="directions" rows="4" cols="50">
+            </textarea>
+
+            <!-- <input type="file" name="image" id="image"> -->
+            <button type="submit">Submit</button>
+        </form>
     </main>
 </body>
 </html>
